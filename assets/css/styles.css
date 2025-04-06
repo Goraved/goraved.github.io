@@ -999,6 +999,45 @@ ul {
     }
 }
 
+.manifesto-quote {
+    border-left: 4px solid var(--primary);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background-color: rgba(var(--primary-rgb), 0.05);
+    border-radius: 5px;
+    font-style: italic;
+    position: relative;
+}
+
+.manifesto-quote p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.manifesto-quote::before {
+    content: """;
+    font-size: 3rem;
+    font-family: Georgia, serif;
+    color: rgba(var(--primary-rgb), 0.2);
+    position: absolute;
+    left: 0.5rem;
+    top: -0.5rem;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .manifesto-quote {
+        padding: 0.75rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .manifesto-quote::before {
+        font-size: 2.5rem;
+    }
+}
+
 /* Contact Section */
 .contact {
     display: grid;

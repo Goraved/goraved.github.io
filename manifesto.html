@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Roman Pobotin - AQA Manifesto" property="og:title">
-    <meta content="./assets/favicon.ico" property="og:image">
-    <meta content="notranslate" name="google"/>
+    <meta content="https://goraved.github.io/manifesto.html" property="og:url">
+    <meta content="Roman Pobotin - AQA Manifesto" property="og:site_name">
+    <meta content="website" property="og:type">
+    <meta content="./assets/avatar.jpg" property="og:image">
     <meta content="Roman Pobotin's comprehensive QA Automation (SDET) Manifesto detailing principles for modern quality assurance, blending QA, Development, and DevOps practices."
           property="og:description">
     <meta content="index, follow" name="robots">
     <meta content="QA Automation, SDET, Roman Pobotin, Test Automation, Python, Playwright, CI/CD, Ukraine QA Engineer, Software Testing, Manifesto"
           name="keywords">
     <meta content="Roman Pobotin" name="author">
+    <meta content="summary" name="twitter:card"/>
+    <meta content="Roman Pobotin - QA Automation & SDET" name="twitter:title"/>
+    <meta content="Discover the QA Automation (SDET) Manifesto by Roman Pobotin — a guide to effective software quality practices and test automation strategy."
+          name="twitter:description"/>
+    <meta content="./assets/avatar.jpg" name="twitter:image"/>
     <title>QA Automation Manifesto by Roman Pobotin | Best Practices for SDETs</title>
     <meta content="Discover the QA Automation (SDET) Manifesto by Roman Pobotin — a guide to effective software quality practices and test automation strategy."
           name="description">
@@ -50,6 +57,11 @@
         <!-- Manifesto Content -->
         <div class="manifesto-section">
             <h2 class="section-title" id="vstup">Вступ</h2>
+            <p class="manifesto-text"
+               style="background-color: #f8f9fa; border-left: 4px solid #6c757d; padding: 15px; border-radius: 4px; margin: 20px 0;">
+                <em>Примітка: Цей маніфест представляє мій суб'єктивний погляд на професію QA та відображає особистий
+                    досвід і принципи, які я вважаю важливими для ефективної роботи в цій сфері.</em>
+            </p>
             <p class="manifesto-text">
                 Сучасна розробка ПЗ вимагає від тестувальників значно ширшого набору навичок,
                 ніж просто знання базових методів тестування. Роль <strong>QA Automation (SDET)</strong> — це
@@ -332,6 +344,15 @@
                 виправлення або видалення ненадійних сценаріїв.<br/>
                 <strong>Результат:</strong> Стабільні пайплайни, менше фальшивих «аварій», швидший цикл зворотного
                 зв'язку.
+            </p>
+        </div>
+
+        <div class="manifesto-divider"></div>
+
+        <div class="manifesto-section">
+            <p class="manifesto-text" style="text-align: center; font-style: italic; margin: 30px 0;">
+                Далі наведено додаткові приклади, методології та посилання на літературу,
+                які можуть бути корисними для поглибленого розуміння принципів QA Automation і SDET.
             </p>
         </div>
 
@@ -673,22 +694,6 @@
                 </li>
             </ul>
 
-            <h3 class="subsection-title">Онлайн-спільноти та платформи</h3>
-            <ul class="manifesto-list">
-                <li>
-                    <strong>Ministry of Testing</strong> —
-                    <a href="https://www.ministryoftesting.com/">ministryoftesting.com</a>
-                </li>
-                <li>
-                    <strong>SQA StackExchange</strong> —
-                    <a href="https://sqa.stackexchange.com/">sqa.stackexchange.com</a>
-                </li>
-                <li>
-                    <strong>GitHub Actions Marketplace</strong> —
-                    <a href="https://github.com/marketplace?type=actions">github.com/marketplace?type=actions</a>
-                </li>
-            </ul>
-
             <h3 class="subsection-title">Для прокачування технічних навичок</h3>
             <ul class="manifesto-list">
                 <li><strong>LeetCode</strong> — <a href="https://leetcode.com/">leetcode.com</a></li>
@@ -715,21 +720,7 @@
                 Ідеальний результат роботи SDET — коли команда настільки <em>виросла</em> в культурі якості, що
                 може самостійно підтримувати високий рівень тестування і розробки навіть без постійної присутності
                 QA-фахівця.<br/>
-                Застосування принципів <strong>ISTQB CTAL-TAE</strong> (ефективна архітектура TAS, TestOps,
-                безперервне покращення) та <strong>ISTQB CTAL-TM</strong> (ризик-орієнтоване тестування,
-                стратегія, залучення стейкхолдерів), концепцій <strong>BDD</strong> (Dan North), ідей
-                <strong>Test Automation Manifesto</strong> (Smith &amp; Meszaros) та <strong>xUnit Test
-                Patterns</strong>
-                створює стійкий фундамент для <strong>безперервного розвитку</strong> й
-                <strong>високої якості</strong> програмного забезпечення.
             </p>
-        </div>
-
-        <!-- Footer -->
-        <div class="manifesto-footer">
-            <p>Цей документ об'єднує:<br/>
-                принципи SDET, BDD, ISTQB Advanced TAE, CTAL-TM, Test Automation Manifesto,<br/>
-                тези з xUnit Test Patterns, приклади з реальних проєктів та джерела для глибшого вивчення.</p>
         </div>
     </div>
 </div>
@@ -745,6 +736,60 @@
 <script>
     // Set current year
     document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Roman Pobotin",
+        "jobTitle": "QA Automation Engineer & SDET",
+        "url": "https://goraved.github.io",
+        "sameAs": [
+            "https://github.com/Goraved",
+            "https://www.linkedin.com/in/romanpobotin/",
+            "https://t.me/goraved"
+        ],
+        "knowsAbout": [
+            "QA Automation",
+            "SDET",
+            "Test Architecture",
+            "CI/CD",
+            "Python",
+            "Playwright",
+            "AWS",
+            "DevOps"
+        ],
+        "description": "Experienced QA Automation Lead and SDET based in Kyiv, Ukraine, focused on building robust test automation systems and optimizing CI/CD workflows.",
+        "image": "https://goraved.github.io/assets/images/avatar.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kyiv",
+            "addressCountry": "UA"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "ДП \"Дія\"",
+            "url": "https://company.diia.gov.ua/"
+        },
+        "alumniOf": [
+            {
+                "@type": "Organization",
+                "name": "SQUAD",
+                "url": "https://squad.ua/"
+            },
+            {
+                "@type": "Organization",
+                "name": "BCD TripTech",
+                "url": "https://bcdtriptech.peopleforce.io/careers"
+            },
+            {
+                "@type": "Organization",
+                "name": "GlobalLogic",
+                "url": "https://www.globallogic.com"
+            }
+        ],
+        "skills": "Python, Playwright, Pytest, AWS, Docker, CI/CD, Test Architecture, Team Leadership"
+    }
 </script>
 </body>
 </html>
