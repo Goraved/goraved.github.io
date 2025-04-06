@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://goraved.github.io/sitemap.xml
