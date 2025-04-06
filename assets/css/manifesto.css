@@ -1,0 +1,271 @@
+/* Manifesto Page Styles */
+
+/* Layout and container styles */
+.manifesto-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: var(--spacing-3xl);
+}
+
+.page-content {
+    padding-top: 80px;
+}
+
+/* Section styling */
+.manifesto-section {
+    background-color: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.manifesto-section:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+    transition: all var(--transition-fast);
+}
+
+/* Header and titles */
+.manifesto-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.manifesto-title {
+    font-size: 2.25rem;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.manifesto-subtitle {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--gray-200);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    border-radius: var(--radius-full);
+}
+
+.subsection-title {
+    font-size: 1.25rem;
+    color: var(--gray-800);
+    margin: var(--spacing-lg) 0 var(--spacing-sm);
+    font-weight: 600;
+}
+
+/* Text and content */
+.manifesto-text {
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+.manifesto-text strong {
+    color: var(--gray-800);
+}
+
+.manifesto-list {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-lg);
+}
+
+.manifesto-list li {
+    margin-bottom: var(--spacing-sm);
+    color: var(--gray-700);
+    line-height: 1.6;
+}
+
+.manifesto-list li strong {
+    color: var(--gray-800);
+}
+
+/* Images */
+.manifesto-img {
+    display: block;
+    max-width: 100%;
+    margin: var(--spacing-lg) auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast);
+}
+
+.manifesto-img:hover {
+    transform: scale(1.01);
+    box-shadow: var(--shadow-md);
+}
+
+/* Buttons */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    gap: 0.5rem;
+    margin: var(--spacing-md) 0;
+}
+
+.download-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+/* Footer */
+.manifesto-footer {
+    text-align: center;
+    padding: var(--spacing-lg);
+    border-top: 1px solid var(--gray-200);
+    margin-top: var(--spacing-xl);
+    color: var(--gray-600);
+    font-style: italic;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.manifesto-divider {
+    height: 2px;
+    background-color: var(--gray-200);
+    margin: var(--spacing-lg) 0;
+    position: relative;
+}
+
+.manifesto-divider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    border-radius: var(--radius-full);
+}
+
+/* Header and navigation */
+.header {
+    background-color: var(--gray-900);
+    padding: var(--spacing-md) 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    color: var(--light);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.header-nav {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.header-nav-link {
+    color: var(--gray-300);
+    transition: all var(--transition-fast);
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    position: relative;
+}
+
+.header-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: all var(--transition-fast);
+    transform: translateX(-50%);
+}
+
+.header-nav-link:hover {
+    color: var(--light);
+}
+
+.header-nav-link:hover::after {
+    width: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .manifesto-title {
+        font-size: 1.75rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .subsection-title {
+        font-size: 1.15rem;
+    }
+
+    .manifesto-section {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .header {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .page-content {
+        padding-top: 120px;
+    }
+
+    .manifesto-container {
+        padding-top: var(--spacing-lg);
+    }
+}

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Roman Pobotin - QA Automation & SDET" property="og:title">
+    <meta content="./assets/favicon.ico" property="og:image">
+    <meta content="Roman Pobotin, a QA Automation Lead & SDET based in Kyiv, specializing in test architecture, CI/CD optimization, Python automation, and leading QA teams."
+          property="og:description">
+    <meta content="Roman Pobotin, a QA Automation Lead & SDET based in Kyiv, specializing in test architecture, CI/CD optimization, Python automation, and leading QA teams."
+          name="description">
+    <meta content="index, follow" name="robots">
+    <meta content="QA Automation, SDET, Roman Pobotin, Test Automation, Python, Playwright, CI/CD, Ukraine QA Engineer, Software Testing, Manifesto"
+          name="keywords">
+    <meta content="Roman Pobotin" name="author">
+    <title>Roman Pobotin - QA Automation Engineer & SDET</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+<header class="hero">
+    <div class="hero__background">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+    </div>
+    <div class="container">
+        <div class="hero__content" style="margin: 0 auto; max-width: 800px;">
+            <div class="hero__image-container">
+                <div class="hero__image-wrapper">
+                    <img alt="Roman Pobotin" class="hero__image" src="./assets/images/avatar.jpg">
+                </div>
+            </div>
+            <h1 class="hero__title">Roman Pobotin</h1>
+            <p class="hero__subtitle">QA Automation Engineer & SDET</p>
+
+            <div class="hero__typed-container">
+                <span id="typed-element"></span>
+            </div>
+            <p class="hero__tagline">QA Lead & Test Architecture Expert</p>
+
+            <div class="social-links">
+                <a class="social-links__item" href="https://github.com/Goraved" rel="noopener noreferrer" target="_blank"
+                   title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social-links__item" href="https://www.linkedin.com/in/romanpobotin/" rel="noopener noreferrer"
+                   target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-links__item" href="mailto:roman.pobotin@gmail.com" rel="noopener noreferrer"
+                   title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="social-links__item" href="https://t.me/goraved" rel="noopener noreferrer" target="_blank"
+                   title="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a class="social-links__item" href="https://repl.it/@RomanPobotin" rel="noopener noreferrer" target="_blank"
+                   title="Repl.it">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#expertise">Expertise</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#career">Career</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about">
+                <div class="about__content">
+                    <p class="about__text">
+                        I am an experienced <strong>QA Automation Lead</strong> with a rich background in Software
+                        Development Engineering in Test (SDET) and Test Operations (TestOps), passionate about driving
+                        quality since 2015. My focus is on building robust test automation systems, optimizing
+                        CI/CD workflows, and leading quality assurance initiatives for diverse web and mobile
+                        applications.
+                    </p>
+                    <p class="about__text">
+                        As a <strong>Lead-Manager</strong>, I excel in guiding QA teams (up to 6 engineers), fostering a
+                        culture of innovation, and mentoring individuals to transition into automation roles.
+                        My hands-on approach has led to significant improvements, such as dramatically reducing
+                        regression testing times from weeks to days and achieving comprehensive test coverage.
+                        I thrive on enhancing testing processes, integrating testing seamlessly into development
+                        cycles, and building advanced tools to solve complex challenges.
+                    </p>
+                    <p class="about__text">
+                        With strong foundations in QA principles, development practices, and DevOps methodologies, I aim
+                        to elevate quality assurance from a simple verification step to a strategic enabler within
+                        engineering teams. I am proficient in Python, various automation tools, and cloud environments,
+                        always seeking opportunities to leverage technology for better, faster, and more reliable
+                        software delivery.
+                    </p>
+                    <div class="about__extra">
+                        <div class="about__location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kyiv, Ukraine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-projects">
+                <a class="btn more-projects__cv" href="./CV.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="expertise">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="expertise">
+                <div class="expertise__category">
+                    <h3 class="expertise__title">QA & Leadership</h3>
+                    <div class="expertise__skills">
+                        <span class="skill-tag skill-tag--highlight">Team Leadership</span>
+                        <span class="skill-tag skill-tag--highlight">Test Architecture</span>
+                        <span class="skill-tag">Test Strategy</span>
+                        <span class="skill-tag skill-tag--highlight">Mentoring</span>
+                        <span class="skill-tag">QA Process Design</span>
+                        <span class="skill-tag">ISTQB Methodologies</span>
+                        <span class="skill-tag">Shift-Left Practices</span>
+                        <span class="skill-tag">Test-Driven Development</span>
+                        <span class="skill-tag">BDD Approach</span>
+                    </div>
+                </div>
+
+                <div class="expertise__category">
+                    <h3 class="expertise__title">Programming & Automation</h3>
+                    <div class="expertise__skills">
+                        <span class="skill-tag skill-tag--highlight">Python (Expert)</span>
+                        <span class="skill-tag skill-tag--highlight">Playwright</span>
+                        <span class="skill-tag">Pytest</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Appium</span>
+                        <span class="skill-tag">JavaScript/TypeScript</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Flask</span>
+                    </div>
+                </div>
+
+                <div class="expertise__category">
+                    <h3 class="expertise__title">DevOps & Cloud</h3>
+                    <div class="expertise__skills">
+                        <span class="skill-tag skill-tag--highlight">AWS Services</span>
+                        <span class="skill-tag">AWS CDK (TypeScript)</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">GitLab CI</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                        <span class="skill-tag">OpenShift</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="expertise__category">
+                    <h3 class="expertise__title">Databases & Monitoring</h3>
+                    <div class="expertise__skills">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MS SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Kibana</span>
+                        <span class="skill-tag">Elasticsearch</span>
+                        <span class="skill-tag">Test Reporting</span>
+                        <span class="skill-tag">Performance Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">AQA Topics</h3>
+                        <p class="project-card__description">Knowledge sharing platform for QA Automation engineers with
+                            searchable topics and resources.</p>
+                        <div class="project-card__tags">
+                            <span class="micro-tag">Python</span>
+                            <span class="micro-tag">Flask</span>
+                            <span class="micro-tag">Vercel</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/Goraved/AQA_topics" target="_blank">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                            <a class="project-card__link" href="https://aqa-topics.vercel.app/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">QA Skills</h3>
+                        <p class="project-card__description">Analytics platform that processes job vacancies to provide
+                            insights on QA skill demand.</p>
+                        <div class="project-card__tags">
+                            <span class="micro-tag">Python</span>
+                            <span class="micro-tag">Data Analysis</span>
+                            <span class="micro-tag">Heroku</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/Goraved/qa_skills" target="_blank">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                            <a class="project-card__link" href="https://qa-skills.herokuapp.com/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">QA Skills Bot</h3>
+                        <p class="project-card__description">Telegram bot providing insights about QA market trends and
+                            skill statistics.</p>
+                        <div class="project-card__tags">
+                            <span class="micro-tag">Python</span>
+                            <span class="micro-tag">Telegram API</span>
+                            <span class="micro-tag">Data Visualization</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/Goraved/qa_skills_bot"
+                               target="_blank">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                            <a class="project-card__link" href="https://t.me/qa_skills_bot" target="_blank">
+                                <i class="fab fa-telegram-plane"></i> Bot
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Playwright Python Practice</h3>
+                        <p class="project-card__description">Example implementation of automated testing using
+                            Playwright for Python with Docker integration.</p>
+                        <div class="project-card__tags">
+                            <span class="micro-tag">Python</span>
+                            <span class="micro-tag">Playwright</span>
+                            <span class="micro-tag">Docker</span>
+                            <span class="micro-tag">Custom HTML reporter</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/Goraved/playwright_python_practice"
+                               target="_blank">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Typhon Web UI</h3>
+                        <p class="project-card__description">Basic test framework to test Web UI using Selenium with
+                            Page Object pattern and Allure reporting.</p>
+                        <div class="project-card__tags">
+                            <span class="micro-tag">Python</span>
+                            <span class="micro-tag">Selenium</span>
+                            <span class="micro-tag">Allure</span>
+                            <span class="micro-tag">Page Object</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/Goraved/Typhon-web-UI"
+                               target="_blank">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Typhon API</h3>
+                        <p class="project-card__description">Test framework for REST API testing using Python requests
+                            library with Allure reporting.</p>
+                        <div class="project-card__tags">
+                            <span class="micro-tag">Python</span>
+                            <span class="micro-tag">REST API</span>
+                            <span class="micro-tag">Allure</span>
+                            <span class="micro-tag">Requests</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/Goraved/Typhon-API" target="_blank">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Typhon Mobile</h3>
+                        <p class="project-card__description">Mobile UI test framework using Appium with Page Object
+                            pattern and Allure reporting.</p>
+                        <div class="project-card__tags">
+                            <span class="micro-tag">Python</span>
+                            <span class="micro-tag">Appium</span>
+                            <span class="micro-tag">Allure</span>
+                            <span class="micro-tag">Mobile Testing</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/Goraved/Typhon-Mobile"
+                               target="_blank">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-projects">
+                    <a class="more-projects__link" href="https://github.com/Goraved" target="_blank">
+                        <i class="fab fa-github"></i> Explore even more projects on my GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="career">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Career Path</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="career-container">
+                <div class="career-nav">
+                    <button class="career-nav__btn career-nav__btn--active" data-view="timeline">Timeline View</button>
+                    <button class="career-nav__btn" data-view="detailed">Detailed View</button>
+                </div>
+
+                <div class="timeline career-view career-view--active" id="timeline-view">
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__date">Current</div>
+                            <h3 class="timeline__position">Senior AQA</h3>
+                            <div class="timeline__company">
+                                <a href="https://company.diia.gov.ua/" target="_blank">ДП "Дія"</a>
+                            </div>
+                            <p class="timeline__description">
+                                Contributing to Ukraine's digital transformation by implementing automation for
+                                government registry projects, creating 1000+ tests.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__date">2022 - 2024</div>
+                            <h3 class="timeline__position">Lead AQA/SDET</h3>
+                            <div class="timeline__company">
+                                <a href="https://squad.ua/" target="_blank">SQUAD</a>
+                            </div>
+                            <p class="timeline__description">
+                                Led a team of six QA engineers, reduced regression testing time from weeks to days, and
+                                migrated infrastructure to AWS.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__date">2022</div>
+                            <h3 class="timeline__position">Senior AQA</h3>
+                            <div class="timeline__company">
+                                <a href="https://bcdtriptech.peopleforce.io/careers" target="_blank">BCD TripTech</a>
+                            </div>
+                            <p class="timeline__description">
+                                Developed automation frameworks for travel technology solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__date">2020 - 2022</div>
+                            <h3 class="timeline__position">Senior SDET → Lead SDET</h3>
+                            <div class="timeline__company">
+                                <a href="https://www.globallogic.com" target="_blank">GlobalLogic</a>
+                            </div>
+                            <p class="timeline__description">
+                                Advanced to lead role, focusing on test automation frameworks and mentoring.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__date">2019 - 2020</div>
+                            <h3 class="timeline__position">Senior QA</h3>
+                            <div class="timeline__company">
+                                <a href="https://intelity.com/" target="_blank">INTELITY</a>
+                            </div>
+                            <p class="timeline__description">
+                                Led QA efforts for hospitality technology solutions, creating automation frameworks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__date">2018 - 2019</div>
+                            <h3 class="timeline__position">Automation QA</h3>
+                            <div class="timeline__company">
+                                <a href="https://www.globallogic.com" target="_blank">GlobalLogic</a>
+                            </div>
+                            <p class="timeline__description">
+                                Built automation frameworks and implemented testing solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__date">2017 - 2018</div>
+                            <h3 class="timeline__position">QA Engineer</h3>
+                            <div class="timeline__company">
+                                <a href="https://www.adyax.com" target="_blank">Adyax</a>
+                            </div>
+                            <p class="timeline__description">
+                                Wrote automation UI, API, and Load tests for web applications using Python.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__date">2016 - 2017</div>
+                            <h3 class="timeline__position">QA Engineer</h3>
+                            <div class="timeline__company">
+                                <a href="https://trustsourcing.com" target="_blank">Trust Sourcing</a>
+                            </div>
+                            <p class="timeline__description">
+                                Started career in QA with both manual and automation testing responsibilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detailed-experience career-view" id="detailed-view">
+                    <div class="career-cards">
+                        <div class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">Senior AQA</h3>
+                                <div class="career-card__company">ДП "Дія"</div>
+                                <div class="career-card__period">Current</div>
+                            </div>
+                            <ul class="career-card__highlights">
+                                <li>Pioneered automation testing creating 1000+ tests covering 70% of business
+                                    processes
+                                </li>
+                                <li>Designed robust Python test automation framework for government registry projects
+                                </li>
+                                <li>Implemented comprehensive Page Object Model architecture improving test
+                                    maintainability
+                                </li>
+                                <li>Created advanced database testing solutions with PostgreSQL/OpenShift integration
+                                </li>
+                                <li>Built CI/CD pipelines in GitLab for automated test execution</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">Lead AQA/SDET</h3>
+                                <div class="career-card__company">SQUAD</div>
+                                <div class="career-card__period">2022 - 2024</div>
+                            </div>
+                            <ul class="career-card__highlights">
+                                <li>Led a team of six QA engineers, providing technical leadership</li>
+                                <li>Reduced regression testing time from 3-4 weeks to 1-2 days</li>
+                                <li>Achieved full automation test coverage across 6 products</li>
+                                <li>Improved test coverage from 40% to 95% across key products</li>
+                                <li>Led infrastructure transformation to AWS using AWS CDK</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">Senior AQA</h3>
+                                <div class="career-card__company">BCD TripTech</div>
+                                <div class="career-card__period">2022</div>
+                            </div>
+                            <ul class="career-card__highlights">
+                                <li>Developed and maintained automation frameworks for travel technology solutions</li>
+                                <li>Implemented CI/CD pipelines for automated testing</li>
+                                <li>Collaborated with cross-functional teams to improve product quality</li>
+                                <li>Introduced performance testing and monitoring solutions</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">Senior SDET → Lead SDET</h3>
+                                <div class="career-card__company">GlobalLogic</div>
+                                <div class="career-card__period">2020 - 2022</div>
+                            </div>
+                            <ul class="career-card__highlights">
+                                <li>Advanced to lead role, taking responsibility for test automation strategy</li>
+                                <li>Developed comprehensive test frameworks and CI test processes</li>
+                                <li>Integrated testing processes into development teams</li>
+                                <li>Mentored junior QA engineers and provided technical guidance</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">Senior QA</h3>
+                                <div class="career-card__company">INTELITY</div>
+                                <div class="career-card__period">2019 - 2020</div>
+                            </div>
+                            <ul class="career-card__highlights">
+                                <li>Tested mobile apps (Android, iOS), backend, web UI, and IoT solutions</li>
+                                <li>Created automation tools and frameworks from scratch for Web UI, API, and Mobile
+                                </li>
+                                <li>Developed useful tools and scripts for different testing needs</li>
+                                <li>Mentored other QA engineers in automation practices</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">Automation QA</h3>
+                                <div class="career-card__company">GlobalLogic</div>
+                                <div class="career-card__period">2018 - 2019</div>
+                            </div>
+                            <ul class="career-card__highlights">
+                                <li>Built automation frameworks and implemented testing solutions</li>
+                                <li>Focused on Python automation for API and UI testing</li>
+                                <li>Worked with cross-functional teams to improve product quality</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">QA Engineer</h3>
+                                <div class="career-card__company">Adyax</div>
+                                <div class="career-card__period">2017 - 2018</div>
+                            </div>
+                            <ul class="career-card__highlights">
+                                <li>Wrote automation UI, API, and Load tests for web applications using Python</li>
+                                <li>Created and refactored automation frameworks</li>
+                                <li>Worked with databases and analyzed data across sites</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">QA Engineer</h3>
+                                <div class="career-card__company">Trust Sourcing</div>
+                                <div class="career-card__period">2016 - 2017</div>
+                            </div>
+                            <ul class="career-card__highlights">
+                                <li>Began career with manual testing responsibilities</li>
+                                <li>Progressed to writing automation test scenarios</li>
+                                <li>Developed algorithms and scripts to generate reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="manifesto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My AQA Manifesto Highlights</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="manifesto-container">
+                <!-- Diagram centered above the content -->
+                <div class="manifesto__visual">
+                    <div class="manifesto__diagram">
+                        <div class="manifesto__circle manifesto__circle--qa">QA</div>
+                        <div class="manifesto__circle manifesto__circle--dev">Dev</div>
+                        <div class="manifesto__circle manifesto__circle--devops">DevOps</div>
+                        <div class="manifesto__center">SDET</div>
+                    </div>
+                </div>
+
+                <!-- Main content below -->
+                <div class="manifesto__content">
+                    <p class="manifesto__intro">
+                        My approach to Quality Assurance Automation (AQA) is built on the idea that it's more
+                        than just testing; it's about optimizing the entire development lifecycle. It blends QA
+                        expertise, strong Development skills, and DevOps practices (SDET). Key principles include:
+                    </p>
+
+                    <div class="manifesto-points">
+                        <div class="manifesto-point">
+                            <span class="point-icon"><i class="fas fa-rocket"></i></span>
+                            <div class="point-text">
+                                <h4>Optimize Processes, Not Just Test</h4>
+                                <p>Focus on a holistic view of development, accelerating delivery and reducing manual
+                                    effort through smart automation and CI/CD integration.</p>
+                            </div>
+                        </div>
+
+                        <div class="manifesto-point">
+                            <span class="point-icon"><i class="fas fa-code-branch"></i></span>
+                            <div class="point-text">
+                                <h4>SDET Mindset</h4>
+                                <p>Combine deep QA knowledge with programming prowess (Python focus) and DevOps skills
+                                    (AWS, Docker, CI/CD) to build robust solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="manifesto-point">
+                            <span class="point-icon"><i class="fas fa-tools"></i></span>
+                            <div class="point-text">
+                                <h4>Build Tools, Not Just Tests</h4>
+                                <p>Develop custom frameworks, utilities, and scripts that enhance testing capabilities
+                                    and provide broader project value.</p>
+                            </div>
+                        </div>
+
+                        <div class="manifesto-point">
+                            <span class="point-icon"><i class="fas fa-users-cog"></i></span>
+                            <div class="point-text">
+                                <h4>Embrace TestOps &amp; T-Shape</h4>
+                                <p>Implement monitoring, metrics, and continuous improvement (TestOps), while fostering
+                                    broad technical understanding alongside deep QA expertise (T-Shape).</p>
+                            </div>
+                        </div>
+
+                        <div class="manifesto-point">
+                            <span class="point-icon"><i class="fas fa-lightbulb"></i></span>
+                            <div class="point-text">
+                                <h4>Continuous Learning &amp; Adaptability</h4>
+                                <p>Stay current with new technologies, practice coding skills, and leverage tools like
+                                    AI to find innovative solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="manifesto-point">
+                            <span class="point-icon"><i class="fas fa-handshake"></i></span>
+                            <div class="point-text">
+                                <h4>Shift-Left &amp; Shared Responsibility</h4>
+                                <p>Integrate quality early in the cycle (Shift-Left) and foster a culture where everyone
+                                    owns quality, moving beyond traditional silos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="manifesto__action">
+                        <a class="btn btn--accent" href="./manifesto.html" target="_blank">
+                            Read Full Manifesto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact">
+                <div class="contact__item">
+                    <div class="contact__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__title">Email</h3>
+                        <a class="contact__link" href="mailto:roman.pobotin@gmail.com">roman.pobotin@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__title">LinkedIn</h3>
+                        <a class="contact__link" href="https://www.linkedin.com/in/romanpobotin/" target="_blank">linkedin.com/in/romanpobotin</a>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__title">GitHub</h3>
+                        <a class="contact__link" href="https://github.com/Goraved"
+                           target="_blank">github.com/Goraved</a>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__icon">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__title">Telegram</h3>
+                        <a class="contact__link" href="https://t.me/goraved" target="_blank" title="Telegram">
+                            @Goraved
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p class="footer__text">Goraved © <span id="current-year"></span> | QA Automation Engineer</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Roman Pobotin",
+        "jobTitle": "QA Automation Engineer & SDET",
+        "url": "https://goraved.github.io",
+        "sameAs": [
+            "https://github.com/Goraved",
+            "https://www.linkedin.com/in/romanpobotin/",
+            "https://t.me/goraved"
+        ],
+        "knowsAbout": [
+            "QA Automation",
+            "SDET",
+            "Test Architecture",
+            "CI/CD",
+            "Python",
+            "Playwright",
+            "AWS",
+            "DevOps"
+        ],
+        "description": "Experienced QA Automation Lead and SDET based in Kyiv, Ukraine, focused on building robust test automation systems and optimizing CI/CD workflows.",
+        "image": "./assets/images/avatar.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kyiv",
+            "addressCountry": "UA"
+        }
+    }
+</script>
+</body>
+</html>
