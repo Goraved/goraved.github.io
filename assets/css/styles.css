@@ -790,6 +790,19 @@ ul {
     font-weight: bold;
 }
 
+.career-card__sub {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+    margin: var(--spacing-md) 0 var(--spacing-xs);
+}
+
+.career-card__sub:first-of-type {
+    margin-top: 0;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .timeline {
