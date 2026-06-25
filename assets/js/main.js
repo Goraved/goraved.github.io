@@ -18,9 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize career view toggling
     initCareerView();
 
-    // Improve hero layout
-    adjustHeroLayout();
-
     // Easter egg - Konami code
     initKonamiCode();
 });
@@ -73,7 +70,7 @@ function initSmoothScroll() {
 
             if (targetElement) {
                 // Offset for fixed header if needed
-                const offset = 20;
+                const offset = 72;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
 
                 window.scrollTo({
@@ -90,7 +87,7 @@ function initSmoothScroll() {
  */
 function initNavActiveState() {
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav__link');
+    const navLinks = document.querySelectorAll('.site-nav__link');
 
     function highlightNavItem() {
         const scrollPosition = window.scrollY;
@@ -143,20 +140,6 @@ function initCareerView() {
 }
 
 /**
- * Improve hero section header layout
- */
-function adjustHeroLayout() {
-    const hero = document.querySelector('.hero');
-    const heroContent = document.querySelector('.hero__content');
-
-    if (window.innerWidth < 768) {
-        if (heroContent) heroContent.style.maxWidth = '100%';
-    } else {
-        if (heroContent) heroContent.style.maxWidth = '700px';
-    }
-}
-
-/**
  * Easter egg - Konami code (up, up, down, down, left, right, left, right, b, a)
  */
 function initKonamiCode() {
@@ -189,10 +172,10 @@ function activateEasterEgg() {
     const easterEgg = document.createElement('div');
 
     easterEgg.innerHTML = `
-        <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: var(--primary); color: white; padding: 20px; border-radius: 10px; z-index: 1000; box-shadow: 0 0 20px rgba(0,0,0,0.5); text-align: center;">
-            <h3>🎉 Test Passed! 🎉</h3>
+        <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #2563eb; color: white; padding: 20px; border-radius: 10px; z-index: 1000; box-shadow: 0 0 20px rgba(0,0,0,0.5); text-align: center;">
+            <h3>Test Passed!</h3>
             <p>You found the hidden feature. Great QA skills!</p>
-            <button id="closeEasterEgg" style="background-color: white; color: var(--primary); border: none; padding: 8px 16px; margin-top: 10px; border-radius: 5px; cursor: pointer;">Close</button>
+            <button id="closeEasterEgg" style="background-color: white; color: #2563eb; border: none; padding: 8px 16px; margin-top: 10px; border-radius: 5px; cursor: pointer;">Close</button>
         </div>
     `;
 
@@ -203,5 +186,3 @@ function activateEasterEgg() {
     });
 }
 
-// Run layout adjustment on load and resize
-window.addEventListener('resize', adjustHeroLayout);

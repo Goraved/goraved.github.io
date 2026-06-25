@@ -29,6 +29,22 @@
     <link href="https://goraved.github.io/" rel="canonical"/>
 </head>
 <body>
+<header class="site-header">
+    <div class="site-header__inner">
+        <a aria-label="Back to top" class="site-header__brand" href="#">Roman Pobotin</a>
+        <nav aria-label="Main navigation">
+            <ul class="site-nav__list">
+                <li><a class="site-nav__link" href="#about">About</a></li>
+                <li><a class="site-nav__link" href="#expertise">Expertise</a></li>
+                <li><a class="site-nav__link" href="#projects">Projects</a></li>
+                <li><a class="site-nav__link" href="#career">Career</a></li>
+                <li><a class="site-nav__link" href="#podcast">Podcast</a></li>
+                <li><a class="site-nav__link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
 <header class="hero">
     <div class="hero__background">
         <div class="hero__shape hero__shape--1"></div>
@@ -36,54 +52,52 @@
         <div class="hero__shape hero__shape--3"></div>
     </div>
     <div class="container">
-        <div class="hero__content" style="margin: 0 auto; max-width: 800px;">
-            <div class="hero__image-container">
-                <div class="hero__image-wrapper">
-                    <img alt="Roman Pobotin" class="hero__image" loading="lazy" src="./assets/images/avatar.jpg">
+        <div class="hero__content">
+            <div class="hero__left">
+                <div class="hero__image-container">
+                    <div class="hero__image-wrapper">
+                        <img alt="Roman Pobotin" class="hero__image" loading="lazy" src="./assets/images/avatar.jpg">
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a aria-label="GitHub profile" class="social-links__item" href="https://github.com/Goraved"
+                       rel="noopener noreferrer" target="_blank" title="GitHub">
+                        <i aria-hidden="true" class="fab fa-github"></i>
+                    </a>
+                    <a aria-label="LinkedIn profile" class="social-links__item"
+                       href="https://www.linkedin.com/in/romanpobotin/"
+                       rel="noopener noreferrer" target="_blank" title="LinkedIn">
+                        <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a aria-label="Send email" class="social-links__item" href="mailto:roman.pobotin@gmail.com"
+                       rel="noopener noreferrer" title="Email">
+                        <i aria-hidden="true" class="fas fa-envelope"></i>
+                    </a>
+                    <a aria-label="Telegram" class="social-links__item" href="https://t.me/goraved" rel="noopener noreferrer"
+                       target="_blank" title="Telegram">
+                        <i aria-hidden="true" class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a aria-label="Repl.it profile" class="social-links__item" href="https://repl.it/@RomanPobotin"
+                       rel="noopener noreferrer" target="_blank" title="Repl.it">
+                        <i aria-hidden="true" class="fas fa-code"></i>
+                    </a>
                 </div>
             </div>
-            <h1 class="hero__title">Roman Pobotin</h1>
-            <p class="hero__subtitle">QA Automation Engineer & SDET</p>
-
-            <div class="hero__typed-container">
-                <span id="typed-element"></span>
+            <div class="hero__right">
+                <p class="hero__label">QA Automation Engineer &amp; SDET</p>
+                <h1 class="hero__title">Roman Pobotin</h1>
+                <div class="hero__typed-container">
+                    <span id="typed-element"></span>
+                </div>
+                <p class="hero__bio">QA Lead &amp; Test Architecture Expert — building robust automation systems and
+                    leading quality engineering teams since 2016.</p>
+                <div class="hero__actions">
+                    <a class="btn" href="#contact">Get In Touch</a>
+                    <a class="btn btn--outline" href="./files/CV.pdf" target="_blank">
+                        <i aria-hidden="true" class="fas fa-file-pdf"></i> Download CV
+                    </a>
+                </div>
             </div>
-            <p class="hero__tagline">QA Lead & Test Architecture Expert</p>
-
-            <div class="social-links">
-                <a class="social-links__item" href="https://github.com/Goraved" rel="noopener noreferrer"
-                   target="_blank"
-                   title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a class="social-links__item" href="https://www.linkedin.com/in/romanpobotin/" rel="noopener noreferrer"
-                   target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a class="social-links__item" href="mailto:roman.pobotin@gmail.com" rel="noopener noreferrer"
-                   title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a class="social-links__item" href="https://t.me/goraved" rel="noopener noreferrer" target="_blank"
-                   title="Telegram">
-                    <i class="fab fa-telegram-plane"></i>
-                </a>
-                <a class="social-links__item" href="https://repl.it/@RomanPobotin" rel="noopener noreferrer"
-                   target="_blank"
-                   title="Repl.it">
-                    <i class="fas fa-code"></i>
-                </a>
-            </div>
-
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#expertise">Expertise</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#career">Career</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </div>
 </header>
@@ -872,7 +886,46 @@
         </div>
     </section>
 
-    <section class="section section--alt" id="contact">
+    <section class="section section--alt" id="podcast">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">MRG Podcast</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="podcast-feature">
+                <div aria-hidden="true" class="podcast-feature__icon">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <div class="podcast-feature__body">
+                    <p class="podcast-feature__host">Веду разом з <strong>Oleksa Mashchyts</strong> · QA Україна</p>
+                    <p class="podcast-feature__description">
+                        Про технології очима тестувальників — без маркетингового хайпу, з реальними цифрами.
+                        Замість «10x»: дослідження дають лише 1.3x приросту продуктивності, а ШІ може
+                        уповільнити розробку на 19%. Разом з глядачами досліджуємо WebMCP, агентну архітектуру,
+                        вайб-кодинг, ринок IT та ризик деградації навичок. Прямі ефіри з активним чатом, 1.5–2 год.
+                    </p>
+                    <div class="podcast-feature__platforms">
+                        <a aria-label="Watch MRG Podcast on YouTube"
+                           class="podcast-platform-btn"
+                           href="https://www.youtube.com/watch?v=zrv05vo1jMY&list=PLRrnKJZ8dr9reaqEgsuN3MlM5y5O1yep3" rel="noopener noreferrer" target="_blank">
+                            <i aria-hidden="true" class="fab fa-youtube"></i> YouTube
+                        </a>
+                        <a aria-label="Listen on Spotify" class="podcast-platform-btn"
+                           href="https://open.spotify.com/show/033nW8rz02k6Ym63PNeLz8" rel="noopener noreferrer" target="_blank">
+                            <i aria-hidden="true" class="fab fa-spotify"></i> Spotify
+                        </a>
+                        <a aria-label="Listen on Apple Podcasts"
+                           class="podcast-platform-btn"
+                           href="https://podcasts.apple.com/us/podcast/mrg-podcast/id1896822973" rel="noopener noreferrer" target="_blank">
+                            <i aria-hidden="true" class="fab fa-apple"></i> Apple Podcasts
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>

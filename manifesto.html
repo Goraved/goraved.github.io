@@ -29,12 +29,14 @@
     <link href="./assets/favicon.ico" rel="icon" type="image/x-icon">
 </head>
 <body>
-<!-- Header with navigation -->
-<header class="header">
-    <div class="container header-container">
-        <a class="header-logo" href="index.html">Roman Pobotin</a>
-        <nav class="header-nav">
-            <a class="header-nav-link" href="index.html">Home</a>
+<!-- Sticky site header (shared with index.html) -->
+<header class="site-header">
+    <div class="site-header__inner">
+        <a class="site-header__brand" href="index.html">Roman Pobotin</a>
+        <nav aria-label="Main navigation">
+            <ul class="site-nav__list">
+                <li><a class="site-nav__link" href="index.html">Home</a></li>
+            </ul>
         </nav>
     </div>
 </header>
@@ -46,7 +48,7 @@
         <div class="manifesto-header">
             <h1 class="manifesto-title">Маніфест QA Automation (SDET)</h1>
             <p class="manifesto-subtitle">як рушій безперервного підвищення якості</p>
-            <a class="download-btn" href="./files/manifesto.pdf" rel="noopener noreferrer" rel="noopener noreferrer"
+            <a class="download-btn" href="./files/manifesto.pdf" rel="noopener noreferrer"
                target="_blank">
                 <i class="fas fa-file-pdf"></i> Завантажити PDF
             </a>
@@ -57,8 +59,7 @@
         <!-- Manifesto Content -->
         <div class="manifesto-section">
             <h2 class="section-title" id="vstup">Вступ</h2>
-            <p class="manifesto-text"
-               style="background-color: #f8f9fa; border-left: 4px solid #6c757d; padding: 15px; border-radius: 4px; margin: 20px 0;">
+            <p class="manifesto-note">
                 <em>Примітка: Цей маніфест представляє мій суб'єктивний погляд на професію QA та відображає особистий
                     досвід і принципи, які я вважаю важливими для ефективної роботи в цій сфері.</em>
             </p>
@@ -350,7 +351,7 @@
         <div class="manifesto-divider"></div>
 
         <div class="manifesto-section">
-            <p class="manifesto-text" style="text-align: center; font-style: italic; margin: 30px 0;">
+            <p class="manifesto-aside">
                 Далі наведено додаткові приклади, методології та посилання на літературу,
                 які можуть бути корисними для поглибленого розуміння принципів QA Automation і SDET.
             </p>
